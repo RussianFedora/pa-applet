@@ -18,7 +18,7 @@ BuildRequires:  pkgconfig(x11)
 
 %description
 pa-applet is a systray-applet that allows you to control some of
-PulseAudio's[1] features. More specifically, pa-applet allows you to control
+PulseAudio's features. More specifically, pa-applet allows you to control
 the volume level of the default sink and mute or unmute it. It also allows you
 to change the active profile of the default sink, which can be useful to tell
 PulseAudio to redirect audio to the HDMI output instead of outputting to the
