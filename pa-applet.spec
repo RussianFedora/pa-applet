@@ -1,3 +1,4 @@
+%global commit  33b413b83234d457b9512219cf4c1020eb99a3de
 Name:           pa-applet
 Version:        0
 Release:        1%{?dist}
@@ -5,8 +6,6 @@ Summary:        Applet to control PulseAudio volume level and default sink
 
 License:        BSD
 URL:            https://github.com/fernandotcl/pa-applet
-%global commit  33b413b83234d457b9512219cf4c1020eb99a3de
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
 Source0:        https://github.com/fernandotcl/pa-applet/archive/%{commit}/pa-applet-%{commit}.tar.gz
 
 BuildRequires:  pkgconfig(glib-2.0)
@@ -39,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc README LICENSE ChangeLog
 %{_bindir}/pa-applet
-%{_mandir}/man1/pa-applet.1.gz
+%{_mandir}/man1/pa-applet.1.*
 
 %changelog
 * Sun Apr 20 2014 Dmitry Melnichenko
