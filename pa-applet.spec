@@ -1,7 +1,8 @@
 %global commit  33b413b83234d457b9512219cf4c1020eb99a3de
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
 Name:           pa-applet
 Version:        0
-Release:        1%{?dist}
+Release:        1.git%{shortcommit}%{?dist}
 Summary:        Applet to control PulseAudio volume level and default sink
 
 License:        BSD
@@ -41,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/pa-applet.1.*
 
 %changelog
-* Sun Apr 20 2014 Dmitry Melnichenko
+* Sun Apr 20 2014 Dmitry Melnichenko 0-1.git33b413b
 - Initial import based on commit 33b413b83234d457b9512219cf4c1020eb99a3de 
